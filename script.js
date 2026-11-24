@@ -5,10 +5,10 @@ const birthdayConfig = {
   password: "birthday",
   birthdayMessage: "Happy Birthday to the most special person! ❤️\n\nYou are one of those beautiful people who make the world brighter just by being in it.\n\nMay every dream of yours come true.\n\nMay your smile never fade.\n\nAnd may this new year of your life bring endless happiness, love, and unforgettable memories.\n\nToday is your day. Enjoy every second of it. 💖",
   gallery: [
-    { image: "https://images.unsplash.com/photo-1722696650718-65e6a7692402?auto=format&fit=crop&w=900&q=82", alt: "Bubu ...! Kuchho pucho", caption: "Bubu ...! Kuchho pucho" },
+    { image: "asset/images.jfif", alt: "Bubu ...! Kuchho pucho", caption: "Bubu ...! Kuchho pucho" },
   ],
   backgroundVideo: "",
-  surpriseVideo: "https://www.w3schools.com/html/mov_bbb.mp4",
+  surpriseVideo: "asset/Download (2).mp4",
   music: "",
   theme: { pink: "#e65d88", purple: "#a85bd1", gold: "#f0bf5b" },
   answerMessages: {
