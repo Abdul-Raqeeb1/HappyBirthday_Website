@@ -1,6 +1,6 @@
 // Personalize the entire surprise from this one block. Leave video/music paths empty to use built-in fallbacks.
 const birthdayConfig = {
-  name: "RaqeebLucky",
+  name: "Maryam",
   birthday: new Date().toISOString().slice(0, 10),
   password: "birthday",
   birthdayMessage: "Happy Birthday to the most special person! ❤️\n\nYou are one of those beautiful people who make the world brighter just by being in it.\n\nMay every dream of yours come true.\n\nMay your smile never fade.\n\nAnd may this new year of your life bring endless happiness, love, and unforgettable memories.\n\nToday is your day. Enjoy every second of it. 💖",
