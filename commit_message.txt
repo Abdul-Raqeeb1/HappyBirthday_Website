@@ -1,0 +1,5 @@
+Add cute panda memory card using local asset image and sample video from assets folder
+
+Replace three gallery cards with single cute 'Bubu ...! Kuchho pucho' panda card and set up sample video from assets folder
+
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>

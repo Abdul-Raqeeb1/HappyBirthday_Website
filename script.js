@@ -1,7 +1,7 @@
 // Personalize the entire surprise from this one block. Leave video/music paths empty to use built-in fallbacks.
 const birthdayConfig = {
   name: "Maryam",
-  birthday: new Date().toISOString().slice(0, 10),
+  birthday: "2026-11-30",
   password: "birthday",
   birthdayMessage: "Happy Birthday to the most special person! ❤️\n\nYou are one of those beautiful people who make the world brighter just by being in it.\n\nMay every dream of yours come true.\n\nMay your smile never fade.\n\nAnd may this new year of your life bring endless happiness, love, and unforgettable memories.\n\nToday is your day. Enjoy every second of it. 💖",
   gallery: [
@@ -525,10 +525,8 @@ function updateCountdown() {
   if (!birthdayInput.value) return;
   const [year, month, day] = birthdayInput.value.split("-").map(Number);
   const today = new Date();
-  const target = new Date(today.getFullYear(), month - 1, day);
   const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-  if (target < todayMidnight) target.setFullYear(today.getFullYear() + 1);
-
+  const target = new Date(year, month - 1, day);
   const daysUntil = Math.round((target - todayMidnight) / 86_400_000);
   const dateLabel = new Intl.DateTimeFormat(undefined, { month: "long", day: "numeric" }).format(new Date(year, month - 1, day));
   const title = document.querySelector("#countdown-title");
@@ -539,6 +537,9 @@ function updateCountdown() {
   if (daysUntil === 0) {
     title.textContent = "It’s the big day!";
     value.textContent = "Today ✨";
+  } else if (daysUntil < 0) {
+    title.textContent = "Your special day";
+    value.textContent = "Celebrated 💖";
   } else {
     title.textContent = `Counting down to ${personName}’s day`;
     value.textContent = `${daysUntil} ${daysUntil === 1 ? "day" : "days"}`;
